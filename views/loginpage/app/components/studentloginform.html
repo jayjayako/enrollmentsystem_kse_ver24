@@ -1,0 +1,53 @@
+<div class="fullwidth fullheight flexbox flexdirec-col studentloginpage">
+  <h3 style="color: var(--white)">Log-in</h3>
+  <form onsubmit="return false" style="width: 53%">
+    <fieldset>
+      <div class="studentloginmargin flexbox flexdirec-row">
+        <div class="imgcon">
+          <img src="./img/username-icon-violet.png" alt="" />
+        </div>
+        <input
+          class="inputtextdes2"
+          placeholder="Username"
+          type="text"
+          id="studentusername" />
+      </div>
+      <div class="studentloginmargin flexbox flexdirec-row">
+        <div class="imgcon">
+          <img src="./img/password-icon-violet.png" alt="" />
+        </div>
+        <input
+          class="inputtextdes2"
+          placeholder="Password"
+          type="password"
+          id="studentpassword" />
+      </div>
+      <div class="studentloginmargin studentloginlinkdes1">
+        <a
+          class="linkdes1"
+          onclick="includehtml('studentlogin', 'app/components/studentforgotpassword.html')"
+          >Forgot Password?</a
+        >
+      </div>
+      <div class="studentloginmargin">
+        <button onclick="alert('loggedin')" class="btndes3">LOG IN</button>
+      </div>
+    </fieldset>
+  </form>
+  <div class="studentloginlinkdes2 fullwidth flexbox flexdirec-row">
+    <label>Don't have an account yet?</label>
+    <a
+      class="linkdes1"
+      onclick="document.getElementById('studentlogin').style.display = 'none';
+      document.getElementById('studentregister').style.display = 'block';"
+      >Register Now</a
+    >
+  </div>
+  <div class="studentloginlinkdes2 fullwidth">
+    <a
+      class="linkdes1"
+      onclick="includehtml('mainloginpage', 'app/pages/stafflogin')"
+      >Staff Login</a
+    >
+  </div>
+</div>

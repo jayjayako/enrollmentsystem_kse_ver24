@@ -1,0 +1,74 @@
+<style>
+  .burgermenudefault {
+    width: 70px;
+  }
+  .burgermenuactive {
+    width: 23%;
+  }
+  .mainpageanimate {
+    animation-name: animatedmainpage;
+    animation-duration: 0.4s;
+    transition: 0.5s;
+  }
+  @keyframes animatedmainpage {
+    from {
+      background-color: white;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+<div class="fullwidth fullheight flexbox flexdirec-col">
+  <!-- /////// modal here ////// -->
+  <div
+    id="modals1"
+    class="fullwidth fullheight flexbox"
+    style="position: absolute"></div>
+  <div
+    id="modals2"
+    class="fullwidth fullheight flexbox"
+    style="position: absolute"></div>
+  <!-- ////////////////////////// -->
+  <div
+    onclick="showdropdownnav()"
+    id="dropdownnavconid"
+    class="fullwidth fullheight dropdownnavcon"
+    style="position: absolute">
+    <div
+      onclick="location.replace('../loginpage')"
+      class="dropdownnavinner flexbox flexdirec-row"
+      style="border-radius: 5px">
+      <ion-icon name="log-out-outline" style="color: var(--violet)"></ion-icon>
+      <p style="color: var(--violet)">Logout</p>
+    </div>
+  </div>
+  <div
+    id="header"
+    class="fullwidth fullheight flexbox"
+    style="height: 50px; position: fixed; top: 0"></div>
+
+  <div
+    id="leftnavbarid"
+    class="fullwidth fullheight burgermenudefault"
+    style="
+      border-top-right-radius: 10px;
+      transition: 0.5s;
+      position: fixed;
+      left: 0;
+      margin-top: 93px;
+      z-index: 2;
+    "></div>
+  <div
+    id="mainpage"
+    class="fullwidth fullheight mainpageanimate"
+    style="margin-top: 48px"></div>
+</div>
+<script>
+  includehtml("header", "app/components/header.html");
+  includehtml("leftnavbarid", "app/components/leftnavbar.html");
+  includehtml("mainpage", "app/pages/dashboard");
+  document.getElementById("modals1").style.display = "none";
+  document.getElementById("modals2").style.display = "none";
+</script>

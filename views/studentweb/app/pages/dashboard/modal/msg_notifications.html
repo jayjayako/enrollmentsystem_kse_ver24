@@ -1,0 +1,105 @@
+<style>
+  .enrollnowbtndes {
+    border-radius: 10px;
+    color: var(--black);
+    font-weight: bold;
+  }
+  /* ////////////// modals ///////////// */
+  .enrollnowanimate {
+    animation-name: animatedenrollnow;
+    animation-duration: 2s;
+  }
+  @keyframes animatedenrollnow {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 19.2%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 enrollnowanimate"
+    style="z-index: 2; width: 50%; height: 40%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'
+          "
+        >&times;</span
+      >
+      <h3>Messages and Notifications</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <div
+        class="fullwidth fullheight"
+        style="height: 180px; overflow-y: scroll">
+        <div
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/assessment_payment/selectschool_yearlevel.html');
+        "
+          class="fullwidth fullheight"
+          style="
+            border-radius: 10px;
+            height: auto;
+            background-color: var(--blueGreen);
+            padding: 10px;
+            color: var(--white);
+            margin-bottom: 10px;
+          ">
+          [Notification] Registrar has approved your admission.... Loreto
+          Hermosura11:49 PM
+        </div>
+        <div
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/enlistment/selectsection.html');
+        "
+          class="fullwidth fullheight"
+          style="
+            border-radius: 10px;
+            height: auto;
+            background-color: var(--blueGreen);
+            padding: 10px;
+            color: var(--white);
+            margin-bottom: 10px;
+          ">
+          [Notification] Cashier has approved your payment... Click here.
+        </div>
+        <div
+          class="fullwidth fullheight"
+          style="
+            border-radius: 10px;
+            height: auto;
+            background-color: var(--blueGreen);
+            padding: 10px;
+            color: var(--white);
+            margin-bottom: 10px;
+          ">
+          [Message] Hello world
+        </div>
+        <div
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/balance/paymentmethod.html');
+        "
+          class="fullwidth fullheight"
+          style="
+            border-radius: 10px;
+            height: auto;
+            background-color: var(--blueGreen);
+            padding: 10px;
+            color: var(--white);
+            margin-bottom: 10px;
+          ">
+          [Notification] Pay your balance
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

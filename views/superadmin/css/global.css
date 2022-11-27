@@ -1,0 +1,145 @@
+/* //////////////////// all fonts imported /////////////////// */
+@font-face {
+  font-family: Telegrafregular;
+  src: url("./fonts/Telegraf Regular 400.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Telegrafultrabold;
+  src: url("./fonts/Telegraf UltraBold 800.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Telegrafultralight;
+  src: url("./fonts/Telegraf UltraLight 200.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Barlowthin;
+  src: url("./fonts/barlow/Barlow-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Barlowregular;
+  src: url("./fonts/barlow/Barlow-Regular.ttf") format("truetype");
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+* {
+  font-family: Barlowthin;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 100%;
+  color: var(--ultrablack);
+}
+
+:root {
+  --white: #ffffff;
+  --lightwhite: #ffffffd5;
+  --black: #5e5e5e;
+  --ultrablack: black;
+  --violet: #833db0;
+  --lightBlue: #e8f3f1;
+  --blueGreen: #57cbb4;
+  --yellowgreen: rgba(227, 246, 220, 0.8);
+  --darkGreen: #00392a;
+  --lightViolet: #dcc9e9;
+  --grayViolet: #f6f6f6;
+}
+
+.defaultpagenone {
+  display: none;
+}
+
+.fullwidth {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.fullheight {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.fullheightvh {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.flexcontent {
+  display: flex;
+  align-items: center;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexdirec-col {
+  flex-direction: column;
+}
+.flexdirec-row {
+  flex-direction: row;
+}
+
+.imgsizedes10 {
+  width: 10%;
+  height: auto;
+}
+
+.imgsizedes20 {
+  width: 20%;
+  height: auto;
+}
+
+.imgsizedes30 {
+  width: 30%;
+  height: auto;
+}
+
+.imgsizedes40 {
+  width: 40%;
+  height: auto;
+}
+
+.imgsizedes50 {
+  width: 50%;
+  height: auto;
+}
+
+.imgsizedes60 {
+  width: 60%;
+  height: auto;
+}
+
+.imgsizedes70 {
+  width: 70%;
+  height: auto;
+}
+
+.imgsizedes80 {
+  width: 80%;
+  height: auto;
+}
+
+.imgsizedes90 {
+  width: 60%;
+  height: auto;
+}
+
+.imgsizedes100 {
+  width: 100%;
+  height: auto;
+}

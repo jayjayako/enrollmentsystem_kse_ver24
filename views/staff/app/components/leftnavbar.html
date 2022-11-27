@@ -1,0 +1,116 @@
+<style>
+  .navicondes {
+    background-color: transparent;
+    font-size: 27px;
+    cursor: pointer;
+    font-family: Barlowregular;
+    margin-left: 10px;
+    transition: 0.3s;
+    color: var(--black);
+  }
+  .navbtndes:hover {
+    background-color: var(--blueGreen);
+    border-left: 8px solid var(--violet);
+    color: var(--white);
+    transition: 0.8s;
+  }
+
+  .navbtndes:hover ion-icon {
+    color: var(--white);
+    transition: 0.8s;
+  }
+
+  .navbtndes:hover label {
+    color: var(--white);
+    transition: 0.8s;
+  }
+
+  .navbtnactive {
+    background-color: var(--blueGreen);
+    border-left: 8px solid var(--violet);
+  }
+  .navbtnactive ion-icon {
+    color: var(--white);
+  }
+  .navbtnactive label {
+    color: var(--white);
+  }
+  .leftnavbtns {
+    padding-right: 5px;
+  }
+  .leftnavbtns li {
+    height: 8.3%;
+    list-style: none;
+  }
+</style>
+<div class="fullwidth fullheight" style="background-color: var(--lightBlue)">
+  <div class="flexbox" style="padding: 43px">
+    <img
+      src="./img/knowledgeville_nobackground.png"
+      style="width: 140px; height: auto" />
+  </div>
+  <ul class="leftnavbtns fullwidth fullheight">
+    <li>
+      <div
+        id="home"
+        onclick="defaultsidenavall(); 
+        document.getElementById('home').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/dashboard');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes navbtnactive"
+        style="text-align: left">
+        <ion-icon name="home-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Home</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="registrar"
+        onclick="defaultsidenavall();
+        document.getElementById('registrar').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/registrar');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="person-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Registrar</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="accounting"
+        onclick="defaultsidenavall();
+        document.getElementById('accounting').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/accounting');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="calculator-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Accounting</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="cashier"
+        onclick="defaultsidenavall();
+        document.getElementById('cashier').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/cashier');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="card-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Cashier</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="admindepartment"
+        onclick="defaultsidenavall();
+        document.getElementById('admindepartment').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/admindepartment');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="person-circle-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px"
+          >Admin Department</label
+        >
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,39 @@
+<div class="fullwidth fullheight flexbox flexdirec-row">
+  <!-- /////// modal here ////// -->
+  <div
+    id="modals1"
+    class="fullwidth fullheight flexbox"
+    style="position: absolute"></div>
+  <div
+    id="modals2"
+    class="fullwidth fullheight flexbox"
+    style="position: absolute"></div>
+  <div
+    id="modals3"
+    class="fullwidth fullheight flexbox"
+    style="position: absolute"></div>
+  <!-- ////////////////////////// -->
+  <div
+    id="leftnavbarid"
+    class="fullwidth fullheight"
+    style="
+      width: 34%;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    "></div>
+  <div class="fullwidth fullheight flexbox flexdirec-col">
+    <div
+      id="header"
+      class="fullwidth fullheight flexbox"
+      style="height: 12%"></div>
+    <div id="mainpage" class="fullwidth fullheight"></div>
+  </div>
+</div>
+<script>
+  includehtml("leftnavbarid", "app/components/leftnavbar.html");
+  includehtml("header", "app/components/header.html");
+  includehtml("mainpage", "app/pages/dashboard");
+  document.getElementById("modals1").style.display = "none";
+  document.getElementById("modals2").style.display = "none";
+  document.getElementById("modals3").style.display = "none";
+</script>

@@ -1,0 +1,50 @@
+<style>
+  /* ////////////// modals ///////////// */
+  .paymentsuccessanimate {
+    animation-name: animatedpaymentsuccess;
+    animation-duration: 2s;
+  }
+  @keyframes animatedpaymentsuccess {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 16.4%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 paymentsuccessanimate"
+    style="z-index: 2; width: 30%; height: 49%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      >
+      <h3 style="height: 10px"></h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <div class="fullwidth flexbox flexdirec-col">
+        <img
+          src="./img/approved_vector_1.png"
+          style="width: 120px; height: 120px" />
+        <h4 style="margin-bottom: 10px">Successfully Submitted!</h4>
+        <p style="text-align: center">
+          Please wait for the cashier's approval of your payment. You'll be
+          notified once approved.
+        </p>
+        <button
+          onclick="document.getElementById('modals1').style.display='none'"
+          class="btndes4"
+          style="margin-top: 10px; width: 18%">
+          DONE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<style>
+  /* ////////////// modals ///////////// */
+  .enlistmentscheduleanimate {
+    animation-name: animatedenlistmentschedule;
+    animation-duration: 2s;
+  }
+  @keyframes animatedenlistmentschedule {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 9.3%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 enlistmentscheduleanimate"
+    style="z-index: 2; width: 50%; height: 71%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'
+              "
+        >&times;</span
+      >
+      <h3>Schedule</h3>
+    </div>
+    <div class="modal-body1 fullwidth flexbox">
+      <div class="fullwidth" style="height: 350px; overflow: scroll">
+        <img id="displayscheduleid" src="./img/loginbg.png" />
+      </div>
+      <button
+        onclick="document.getElementById('modals1').style.display='none'
+      "
+        class="btndes4"
+        style="margin-bottom: 10px; position: absolute; bottom: 0; width: 18%">
+        OKAY
+      </button>
+    </div>
+  </div>
+</div>

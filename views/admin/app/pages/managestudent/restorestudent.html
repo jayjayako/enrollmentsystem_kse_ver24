@@ -1,0 +1,97 @@
+<div class="fullwidth fullheight flexbox modal1">
+  <div class="modal-content1" style="z-index: 1; width: 70%; height: 77%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      >
+      <h3>Restore Student</h3>
+    </div>
+    <div class="modal-body1">
+      <fieldset
+        class="fullwidth fullheight flexbox flexdirec-row"
+        style="border: 1px solid var(--blueGreen); border-radius: 10px">
+        <legend
+          style="
+            border-radius: 10px;
+            background-color: var(--blueGreen);
+            color: var(--white);
+            padding: 5px;
+            margin-left: 10px;
+          ">
+          USER INFORMATION
+        </legend>
+        <div class="fullwidth fullheight flexbox flexdirec-col">
+          <div
+            class="fullwidth fullheight flexbox flexdirec-row"
+            style="padding-bottom: 4px">
+            <label class="fullwidth" style="margin-left: 20px"
+              >ID Number:</label
+            >
+            <label class="fullwidth">data</label>
+          </div>
+          <div
+            class="fullwidth fullheight flexbox flexdirec-row"
+            style="padding-bottom: 4px">
+            <label class="fullwidth" style="margin-left: 20px"
+              >Firstname:</label
+            >
+            <label class="fullwidth">data</label>
+          </div>
+          <div
+            class="fullwidth fullheight flexbox flexdirec-row"
+            style="padding-bottom: 4px">
+            <label class="fullwidth" style="margin-left: 20px">Lastname:</label>
+            <label class="fullwidth">data</label>
+          </div>
+          <div
+            class="fullwidth fullheight flexbox flexdirec-row"
+            style="padding-bottom: 4px">
+            <label class="fullwidth" style="margin-left: 20px"
+              >School Level:</label
+            >
+            <label class="fullwidth">data</label>
+          </div>
+          <div
+            class="fullwidth fullheight flexbox flexdirec-row"
+            style="padding-bottom: 4px">
+            <label class="fullwidth" style="margin-left: 20px"
+              >Year Level:</label
+            >
+            <label class="fullwidth">data</label>
+          </div>
+          <div
+            class="fullwidth fullheight flexbox flexdirec-row"
+            style="padding-bottom: 4px">
+            <label class="fullwidth" style="margin-left: 20px">Section:</label>
+            <label class="fullwidth">data</label>
+          </div>
+        </div>
+        <div style="padding: 10px">
+          <img
+            src="./img/defaultimg.png"
+            style="
+              border: 1px solid var(--violet);
+              border-radius: 10px;
+              width: 130px;
+              height: 130px;
+            " />
+        </div>
+      </fieldset>
+      <div
+        id="managestudentrestoretable"
+        class="fullwidth fullheight"
+        style="padding-top: 10px; height: 220px"></div>
+      <div class="fullwidth flexbox" style="padding-top: 5px">
+        <button class="btndes4" style="width: 30%">RESTORE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  includehtml(
+    "managestudentrestoretable",
+    "app/pages/managestudent/table.html"
+  );
+</script>

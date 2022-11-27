@@ -1,0 +1,77 @@
+<div class="fullwidth fullheight flexbox modal1">
+  <div class="modal-content1" style="z-index: 1; width: 70%; height: 75%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      >
+      <h3>Enrollment Reservation</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <fieldset
+        class="fullwidth fullheight"
+        style="border: 1px solid var(--blueGreen); border-radius: 10px">
+        <legend
+          style="
+            border-radius: 10px;
+            background-color: var(--blueGreen);
+            color: var(--white);
+            padding: 5px;
+            margin-left: 10px;
+          ">
+          USER INFORMATION
+        </legend>
+
+        <div style="padding: 10px">
+          <img
+            src="./img/defaultimg.png"
+            style="
+              border: 1px solid var(--violet);
+              border-radius: 10px;
+              width: 130px;
+              height: 130px;
+            " />
+        </div>
+      </fieldset>
+      <div
+        id="enrollmentreservationtable"
+        class="fullwidth fullheight"
+        style="padding-top: 10px; height: 195px"></div>
+      <div class="fullwidth fullheight flexbox flexdirec-row">
+        <div class="fullwidth" style="padding: 10px">
+          <button
+            onclick="
+          document.getElementById('modals2').style.display='block'
+          includehtml('modals2', 'app/pages/registrar/modal/viewmessage.html');
+          "
+            class="btndes4">
+            VIEW MESSAGE
+          </button>
+        </div>
+        <div class="fullwidth" style="padding: 10px">
+          <button class="btndes4">APPROVE</button>
+        </div>
+        <div class="fullwidth" style="padding: 10px">
+          <button
+            onclick="
+          document.getElementById('modals2').style.display='block'
+          includehtml('modals2', 'app/pages/registrar/modal/sendmessage.html');
+          "
+            class="btndes4">
+            SEND MESSAGE
+          </button>
+        </div>
+        <div class="fullwidth" style="padding: 10px">
+          <button class="btndes4">DELETE MESSAGE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  includehtml(
+    "enrollmentreservationtable",
+    "app/pages/registrar/enrollmentreservation/table.html"
+  );
+</script>

@@ -1,0 +1,20 @@
+<div class="fullwidth flexbox flexdirec-col">
+  <form
+    onsubmit="return false"
+    class="fullwidth fullheight flexbox flexdirec-row">
+    <div id="body1" class="fullwidth fullheight flexbox"></div>
+    <div
+      id="body2"
+      class="fullwidth fullheight"
+      style="width: 35%; padding-right: 5px"></div>
+  </form>
+  <div
+    id="addadmintable"
+    class="fullwidth fullheight"
+    style="padding: 5px; height: 220px"></div>
+</div>
+<script>
+  includehtml("body1", "app/pages/addadmin/body1.html");
+  includehtml("body2", "app/pages/addadmin/body2.html");
+  includehtml("addadmintable", "app/pages/addadmin/table.html");
+</script>

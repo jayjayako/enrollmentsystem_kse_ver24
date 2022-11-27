@@ -1,0 +1,73 @@
+<style>
+  /* ////////////// modals ///////////// */
+  .myaccounteditprofileanimate {
+    animation-name: animatedmyaccounteditprofile;
+    animation-duration: 2s;
+  }
+  @keyframes animatedmyaccounteditprofile {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 11.5%;
+      opacity: 1;
+    }
+  }
+  .editprofileinputdes {
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 myaccounteditprofileanimate"
+    style="z-index: 2; width: 40%; height: 64%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'
+              "
+        >&times;</span
+      >
+      <h3>Edit Profile</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <div
+        class="fullwidth fullheight"
+        style="height: 300px; overflow-y: scroll">
+        <div class="fullwidth flexbox flexdirec-col">
+          <h4 style="margin-bottom: 10px">Add Profile Picture</h4>
+          <img
+            src="./img/light_grey.jpg"
+            style="width: 150px; height: 150px; border-radius: 50%" />
+          <button
+            class="btndes2"
+            style="
+              padding: 5px;
+              margin-top: 10px;
+              border-radius: 20px;
+              width: 20%;
+            ">
+            Upload
+          </button>
+        </div>
+        <div class="fullwidth">
+          <label>Lastname</label>
+          <input class="inputtextdes3 editprofileinputdes" type="text" />
+          <label>Firstname</label>
+          <input class="inputtextdes3 editprofileinputdes" type="text" />
+          <label>Email</label>
+          <input class="inputtextdes3 editprofileinputdes" type="text" />
+          <label>Username</label>
+          <input class="inputtextdes3 editprofileinputdes" type="text" />
+          <label>Password</label>
+          <input class="inputtextdes3 editprofileinputdes" type="text" />
+        </div>
+      </div>
+      <div class="fullwidth fullheight flexbox" style="padding: 15px">
+        <button class="btndes4">SAVE</button>
+      </div>
+    </div>
+  </div>
+</div>

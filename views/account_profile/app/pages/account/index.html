@@ -1,0 +1,226 @@
+<style>
+  .accountheader1inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .accountheader1inner {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>
+<div
+  class="fullwidth fullheight flexbox flexdirec-row"
+  style="background-color: rgb(224, 224, 224); padding: 10px">
+  <div
+    class="fullwidth fullheight"
+    style="
+      margin-right: 10px;
+      border-radius: 10px;
+      width: 44%;
+      background-color: var(--white);
+    ">
+    <div
+      class="fullwidth flex flexdirec-row"
+      style="background-color: var(--violet); height: 100px; margin-top: 30px">
+      <div
+        class="fullheight"
+        style="
+          width: 30px;
+          background-color: var(--white);
+          margin-left: 20px;
+        "></div>
+      <p
+        class="fullheight fullwidth flexbox"
+        style="
+          color: var(--white);
+          margin-right: 35px;
+          font-size: 20px;
+          font-weight: bold;
+        ">
+        Full Name
+      </p>
+    </div>
+    <div
+      class="fullwidth flexbox"
+      style="margin-top: 30px; margin-bottom: 30px">
+      <img
+        src="./img/defaultimg.png"
+        style="
+          border-radius: 50%;
+          border: 2px solid var(--violet);
+          width: 200px;
+          height: 200px;
+        " />
+    </div>
+    <h3 class="fullwidth flexbox">Super Admin</h3>
+  </div>
+  <div class="fullwidth fullheight flexbox flexdirec-col">
+    <div
+      class="fullwidth fullheight flex flexdirec-row"
+      style="
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: var(--white);
+      ">
+      <div
+        class="fullheight"
+        style="
+          margin-left: 40px;
+          width: 150px;
+          background-color: var(--lightBlue);
+        ">
+        <h3 class="fullwidth flexbox" style="margin-top: 30px">User Info</h3>
+        <div
+          class="fullwidth"
+          style="
+            background-color: var(--white);
+            height: 30px;
+            margin-top: 30px;
+          "></div>
+      </div>
+      <div
+        class="fullheight flexbox flexdirec-col"
+        style="position: relative; width: 72.5%">
+        <img
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/account/modal/editprofile.html');
+        "
+          src="./img/edit.svg"
+          style="
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 23px;
+            height: 23px;
+            margin-top: 10px;
+            margin-right: 10px;
+          " />
+        <img
+          src="./img/undo.svg"
+          style="
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 23px;
+            height: 23px;
+            margin-top: 10px;
+            margin-right: 45px;
+          " />
+        <div
+          class="fullwidth flexbox flexdirec-row"
+          style="margin-bottom: 10px">
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Username:</label
+          >
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Password:</label
+          >
+        </div>
+        <div
+          class="fullwidth flexbox flexdirec-row"
+          style="margin-bottom: 10px">
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Lastname:</label
+          >
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Firstname:</label
+          >
+        </div>
+        <div
+          class="fullwidth flexbox flexdirec-row"
+          style="margin-bottom: 10px">
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Birthdate:</label
+          >
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Phone:</label
+          >
+        </div>
+        <div
+          class="fullwidth flexbox flexdirec-row"
+          style="margin-bottom: 10px">
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Email:</label
+          >
+          <label
+            class="accountheader1inner"
+            style="width: 200px; overflow-x: auto"
+            >Address:</label
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="fullwidth fullheight flex"
+      style="border-radius: 10px; background-color: var(--white)">
+      <div
+        class="fullheight"
+        style="
+          margin-left: 40px;
+          width: 150px;
+          background-color: var(--lightBlue);
+        ">
+        <h3 class="fullwidth flexbox" style="margin-top: 30px">Activities</h3>
+        <div
+          class="fullwidth"
+          style="
+            background-color: var(--white);
+            height: 30px;
+            margin-top: 30px;
+          "></div>
+      </div>
+      <div class="fullheight" style="width: 72.5%">
+        <div class="fullwidth fullheight" style="padding: 10px">
+          <table class="fullwidth tbldes1">
+            <tr style="border-bottom: 2px solid purple">
+              <th>User Type</th>
+              <th>Lastname</th>
+              <th>Activities</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+            </tr>
+            <tr>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+            </tr>
+            <tr>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+            </tr>
+            <tr>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+              <td>${data}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

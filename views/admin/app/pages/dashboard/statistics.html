@@ -1,0 +1,55 @@
+<style>
+  .admindashboardstatsdropdown {
+    background-color: var(--blueGreen);
+    color: white;
+  }
+  .admindashboardstatsdropdown:focus {
+    outline: none;
+    background-color: var(--blueGreen);
+  }
+  .dashboardcircle {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: var(--blueGreen);
+    border-radius: 50%;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+    left: 0;
+    margin-left: 20px;
+  }
+  .admindashboardposition {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+  }
+
+  .userstats {
+    background-color: rgb(231, 255, 247);
+    border-radius: 10px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+</style>
+<div class="fullwidth fullheight" style="padding-right: 5px">
+  <h4>Statistics</h4>
+  <select
+    id="adminstaffstudentstatsselectid"
+    onchange="if(document.getElementById('adminstaffstudentstatsselectid').value=='Student'){
+      includehtml('studstaffstatsid', 'app/pages/dashboard/studentstats.html')
+    }else{
+      includehtml('studstaffstatsid', 'app/pages/dashboard/staffstats.html')
+    }
+    "
+    class="dropdowndes1 admindashboardstatsdropdown">
+    <option>Staff</option>
+    <option>Student</option>
+  </select>
+
+  <div id="studstaffstatsid" class="fullwidth fullheight"></div>
+</div>
+<script>
+  includehtml("studstaffstatsid", "app/pages/dashboard/staffstats.html");
+</script>

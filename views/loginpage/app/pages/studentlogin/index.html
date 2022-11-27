@@ -1,0 +1,13 @@
+<div class="fullwidth fullheight flexbox flexdirec-row">
+  <div id="studentregister" class="fullwidth fullheight"></div>
+  <div class="fullwidth fullheight flexbox">
+    <img src="./img/kse-logo.png" class="imgsizedes60" />
+  </div>
+  <div id="studentlogin" class="fullwidth fullheight"></div>
+</div>
+<script>
+  includehtml("studentlogin", "app/components/studentloginform.html");
+  includehtml("studentregister", "app/components/studentregisterpage.html");
+  document.getElementById("studentlogin").style.display = "block";
+  document.getElementById("studentregister").style.display = "none";
+</script>

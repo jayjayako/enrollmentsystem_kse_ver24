@@ -1,0 +1,43 @@
+<div class="fullwidth fullheight flexdirec-col">
+  <!-- this is tab buttons -->
+  <div
+    class="fullwidth flexbox flexdirec-row"
+    style="
+      background-color: var(--white);
+      border-bottom: 1px solid var(--blueGreen);
+    ">
+    <label class="flexbox flexdirec-row" style="width: 20%">
+      <input
+        onclick="includehtml('reportsid', 'app/pages/reports/admins.html');"
+        type="radio"
+        checked="checked"
+        name="radio1"
+        class="radiobtn1" />
+      <div class="fullwidth tabdes1" style="text-align: center; padding: 5px">
+        Admins
+      </div>
+    </label>
+
+    <label class="flexbox flexdirec-row" style="width: 20%">
+      <input
+        onclick="includehtml('reportsid', 'app/pages/reports/staffs.html');"
+        type="radio"
+        name="radio1"
+        class="radiobtn1" />
+      <div class="fullwidth tabdes1" style="text-align: center; padding: 5px">
+        Staffs
+      </div>
+    </label>
+    <div class="fullwidth"></div>
+  </div>
+  <!-- /////////////////// -->
+
+  <!-- this is content tab -->
+  <div class="fullwidth flexbox flexdirec-col">
+    <div id="reportsid" class="fullwidth fullheight"></div>
+  </div>
+</div>
+
+<script>
+  includehtml("reportsid", "app/pages/reports/admins.html");
+</script>

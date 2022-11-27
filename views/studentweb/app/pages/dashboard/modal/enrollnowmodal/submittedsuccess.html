@@ -1,0 +1,52 @@
+<style>
+  /* ////////////// modals ///////////// */
+  .submittedsuccessadmissionanimate {
+    animation-name: animatedsubmittedsuccessadmission;
+    animation-duration: 2s;
+  }
+  @keyframes animatedsubmittedsuccessadmission {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 17%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 submittedsuccessadmissionanimate"
+    style="z-index: 2; width: 30%; height: 47%">
+    <div class="modal-header1">
+      <!-- <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      > -->
+      <h3 style="height: 20px"></h3>
+    </div>
+    <div class="modal-body1 fullwidth" style="text-align: center">
+      <div class="fullwidth flexbox">
+        <img
+          src="./img/submit_vector.png"
+          style="width: 130px; height: 130px" />
+      </div>
+
+      <h4 style="margin-top: 5px">Successfully Submitted!</h4>
+      <p style="margin-top: 5px">
+        Please wait for the admin's approval to proceed on the next process.
+      </p>
+      <div class="fullwidth flexbox" style="margin-top: 5px">
+        <button
+          onclick="document.getElementById('modals1').style.display='none'"
+          class="btndes4"
+          style="margin-top: 10px; width: 20%">
+          DONE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<style>
+  .enrollnowbtndes {
+    border-radius: 10px;
+    color: var(--ultrablack);
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* ////////////// modals ///////////// */
+  .enrollnowanimate {
+    animation-name: animatedenrollnow;
+    animation-duration: 2s;
+  }
+  @keyframes animatedenrollnow {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 18%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 enrollnowanimate"
+    style="z-index: 2; width: 30%; height: 44%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'
+        "
+        >&times;</span
+      >
+      <h3>Enroll as:</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <button
+        onclick="
+      document.getElementById('modals1').style.display='block'
+      includehtml('modals1', 'app/pages/dashboard/modal/enrollnowmodal/newstudent.html');
+      "
+        class="btndes3 enrollnowbtndes flexbox">
+        NEW STUDENT
+      </button>
+      <button
+        onclick="
+      document.getElementById('modals1').style.display='block'
+      includehtml('modals1', 'app/pages/dashboard/modal/enrollnowmodal/oldstudent.html');
+      "
+        class="btndes3 enrollnowbtndes flexbox">
+        OLD STUDENT
+      </button>
+      <button
+        onclick="
+      document.getElementById('modals1').style.display='block'
+      includehtml('modals1', 'app/pages/dashboard/modal/enrollnowmodal/transferee.html');
+      "
+        class="btndes3 enrollnowbtndes flexbox">
+        TRANSFEREE STUDENT
+      </button>
+      <button
+        onclick="
+      document.getElementById('modals1').style.display='block'
+      includehtml('modals1', 'app/pages/dashboard/modal/enrollnowmodal/foreigner.html');
+      "
+        class="btndes3 enrollnowbtndes flexbox">
+        FOREIGN STUDENT
+      </button>
+    </div>
+  </div>
+</div>

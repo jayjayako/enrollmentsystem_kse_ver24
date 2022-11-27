@@ -1,0 +1,47 @@
+<div class="fullwidth fullheight flexdirec-col">
+  <h3>Admin Department</h3>
+  <!-- this is tab buttons -->
+  <div
+    class="fullwidth flexbox flexdirec-row"
+    style="
+      background-color: var(--white);
+      border-bottom: 1px solid var(--blueGreen);
+    ">
+    <label class="flexbox flexdirec-row" style="width: 20%">
+      <input
+        onclick="includehtml('admindepartmentid', 'app/pages/admindepartment/notenrolled.html');"
+        type="radio"
+        checked="checked"
+        name="radio1"
+        class="radiobtn1" />
+      <div class="fullwidth tabdes1" style="text-align: center; padding: 5px">
+        Not Enrolled
+      </div>
+    </label>
+
+    <label class="flexbox flexdirec-row" style="width: 20%">
+      <input
+        onclick="includehtml('admindepartmentid', 'app/pages/admindepartment/enrolled.html');"
+        type="radio"
+        name="radio1"
+        class="radiobtn1" />
+      <div class="fullwidth tabdes1" style="text-align: center; padding: 5px">
+        Enrolled
+      </div>
+    </label>
+    <div class="fullwidth"></div>
+  </div>
+  <!-- /////////////////// -->
+
+  <!-- this is content tab -->
+  <div class="fullwidth flexbox flexdirec-col">
+    <div id="admindepartmentid" class="fullwidth fullheight"></div>
+  </div>
+</div>
+
+<script>
+  includehtml(
+    "admindepartmentid",
+    "app/pages/admindepartment/notenrolled.html"
+  );
+</script>

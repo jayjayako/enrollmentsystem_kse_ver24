@@ -1,0 +1,72 @@
+<style>
+  .burgercont {
+    position: absolute;
+    left: 0;
+  }
+  .burgerbgcont {
+    background-color: rgb(211, 211, 211);
+    transition: 0.8s;
+  }
+  .dropdownnavcon {
+    display: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+  }
+  .dropdownnavinner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 55px;
+    margin-right: 5px;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    z-index: 11;
+  }
+  .show {
+    display: block;
+  }
+  .dropdowncaretdes {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 50%;
+  }
+</style>
+<div
+  class="fullwidth fullheight flexbox flexdirec-row"
+  style="position: relative">
+  <div
+    id="burgermenuid"
+    class="fullheight flexbox burgercont"
+    style="width: 70px">
+    <ion-icon
+      onclick="toggleburgermenu()"
+      id="burgermenuopen"
+      name="menu-outline"
+      style="font-size: 37px; color: var(--black)"></ion-icon>
+    <ion-icon
+      onclick="toggleburgermenu()"
+      id="burgermenuclose"
+      name="close-outline"
+      style="font-size: 37px; color: var(--black)"></ion-icon>
+  </div>
+  <img src="./img/kse-logo.png" style="width: 55px" />
+  <img
+    src="./img/username-icon-violet.png"
+    style="width: 32px; position: absolute; right: 0; margin-right: 50px" />
+  <ion-icon
+    id="dropdowncaretid"
+    onclick="showdropdownnav()"
+    name="caret-down-outline"
+    style="
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+      padding: 5px;
+    "></ion-icon>
+</div>
+<script>
+  document.getElementById("burgermenuopen").style.display = "block";
+  document.getElementById("burgermenuclose").style.display = "none";
+</script>

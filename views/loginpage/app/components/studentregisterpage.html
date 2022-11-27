@@ -1,0 +1,83 @@
+<div class="fullwidth fullheight flexbox flexdirec-col studentregisterpage">
+  <h3 style="color: var(--white); margin-bottom: 10px">Register</h3>
+  <div class="fullwidth flexbox flexdirec-row">
+    <div class="flexbox flexdirec-col" style="padding: 5px; width: 40%">
+      <label
+        class="fullwidth"
+        style="text-align: left; color: var(--white)"
+        for="studentreglastname"
+        >Last Name</label
+      >
+      <input class="inputtextdes2" type="text" id="studentreglastname" />
+    </div>
+    <div class="flexbox flexdirec-col" style="padding: 5px; width: 40%">
+      <label
+        class="fullwidth"
+        style="text-align: left; color: var(--white)"
+        for="studentregfirstname"
+        >First Name</label
+      >
+      <input class="inputtextdes2" type="text" id="studentregfirstname" />
+    </div>
+  </div>
+  <div class="fullwidth flexbox">
+    <div class="flexbox flexdirec-col" style="padding: 5px; width: 80%">
+      <label
+        class="fullwidth"
+        style="text-align: left; color: var(--white)"
+        for="studentregusername"
+        >UserName</label
+      >
+      <input class="inputtextdes2" type="text" id="studentregusername" />
+    </div>
+  </div>
+  <div class="fullwidth flexbox">
+    <div class="flexbox flexdirec-col" style="padding: 5px; width: 80%">
+      <label
+        class="fullwidth"
+        style="text-align: left; color: var(--white)"
+        for="studentregemail"
+        >Email Address</label
+      >
+      <input class="inputtextdes2" type="text" id="studentregemail" />
+    </div>
+  </div>
+  <div class="fullwidth flexbox flexdirec-row">
+    <div class="flexbox flexdirec-col" style="padding: 5px; width: 40%">
+      <label
+        class="fullwidth"
+        style="text-align: left; color: var(--white)"
+        for="studentregpassword"
+        >Password</label
+      >
+      <input class="inputtextdes2" type="password" id="studentregpassword" />
+    </div>
+    <div class="flexbox flexdirec-col" style="padding: 5px; width: 40%">
+      <label
+        class="fullwidth"
+        style="text-align: left; color: var(--white)"
+        for="studentregconfirmpass"
+        >Confirm Password</label
+      >
+      <input class="inputtextdes2" type="password" id="studentregconfirmpass" />
+    </div>
+  </div>
+  <div class="fullwidth flexbox" style="width: 80%">
+    <button onclick="alert('loggedin')" class="btndes4">REGISTER</button>
+  </div>
+  <br />
+  <div
+    class="fullwidth flexbox flexdirec-row"
+    style="width: 80%; font-size: 14px">
+    <p style="margin-right: 10px; color: var(--white)">
+      Already have an account yet?
+    </p>
+    <a
+      class="linkdes1"
+      style="color: var(--white); font-weight: bold"
+      onclick="document.getElementById('studentlogin').style.display = 'block';
+      document.getElementById('studentregister').style.display = 'none';"
+      >Login Now</a
+    >
+  </div>
+</div>

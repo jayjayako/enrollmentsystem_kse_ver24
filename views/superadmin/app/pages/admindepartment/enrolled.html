@@ -1,0 +1,62 @@
+<div class="fullwidth flexbox flexdirec-row" style="padding: 20px">
+  <div class="fullwidth flexbox flexdirec-col" style="padding: 5px">
+    <p class="fullwidth" style="text-align: left">Select School Level</p>
+    <select class="dropdowndes1"></select>
+  </div>
+  <div class="fullwidth flexbox flexdirec-col" style="padding: 5px">
+    <p class="fullwidth" style="text-align: left">Select Year Level</p>
+    <select class="dropdowndes1"></select>
+  </div>
+  <div class="fullwidth flexbox flexdirec-col" style="padding: 5px">
+    <p class="fullwidth" style="text-align: left">Select Section</p>
+    <select class="dropdowndes1"></select>
+  </div>
+</div>
+
+<div class="fullwidth fullheight" style="padding: 10px">
+  <fieldset
+    class="fullwidth flexbox flexdirec-row"
+    style="
+      border: 1px solid var(--blueGreen);
+      border-radius: 10px;
+      height: 40%;
+    ">
+    <legend
+      style="
+        border-radius: 10px;
+        background-color: var(--blueGreen);
+        color: var(--white);
+        padding: 5px;
+        margin-left: 10px;
+      ">
+      USER INFORMATION
+    </legend>
+    <div class="fullwidth flexbox flexdirec-col">
+      <p style="padding: 5px">ID Number:</p>
+      <p style="padding: 5px">User Type:</p>
+      <p style="padding: 5px">Firstname:</p>
+      <p style="padding: 5px">Lastname:</p>
+    </div>
+    <div class="fullwidth"></div>
+    <div class="fullwidth">
+      <img
+        class="fullwidth"
+        src="./img/defaultimg.png"
+        style="
+          border: 1px solid var(--violet);
+          border-radius: 10px;
+          height: 150px;
+          width: 150px;
+        " />
+    </div>
+  </fieldset>
+</div>
+
+<div
+  id="admindepttable"
+  class="fullwidth fullheight"
+  style="padding: 5px; height: 210px"></div>
+
+<script>
+  includehtml("admindepttable", "app/pages/admindepartment/table.html");
+</script>

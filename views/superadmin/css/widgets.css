@@ -1,0 +1,265 @@
+fieldset {
+  border: none;
+  outline: none;
+}
+
+/* //////// all textbox design //////// */
+.inputtextdes1 {
+  width: 100%;
+  padding: 9px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--black);
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.inputtextdes1:focus {
+  border: 1px solid var(--blueGreen);
+}
+
+.inputtextdes2 {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.inputtextdes2:focus {
+  outline: none;
+  background-color: rgb(230, 220, 220);
+}
+
+.inputtextdes3 {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+  background-color: rgb(221, 221, 221);
+}
+
+.inputtextdes3:focus {
+  outline: none;
+  background-color: rgb(230, 220, 220);
+}
+/* /////////////////////////////////// */
+
+/* /////////// button design ///////// */
+.btndes1 {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 35px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btndes1:hover {
+  opacity: 0.9;
+}
+
+.btndes2 {
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid var(--violet);
+  background-color: transparent;
+  color: var(--violet);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btndes2:hover {
+  background-color: var(--lightViolet);
+}
+
+.btndes3 {
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 35px;
+  background-color: var(--blueGreen);
+  color: var(--white);
+  transition: 0.5s;
+  box-shadow: 2px 3px 5px rgb(73, 73, 73);
+}
+
+.btndes3:hover {
+  opacity: 0.9;
+}
+
+.btndes4 {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: var(--violet);
+  color: var(--white);
+  transition: 0.5s;
+}
+
+.btndes4:hover {
+  opacity: 0.9;
+}
+
+.btndes5 {
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid var(--blueGreen);
+  background-color: transparent;
+  color: var(--blueGreen);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btndes5:hover {
+  background-color: var(--lightBlue);
+}
+/* /////////////////////////////////// */
+
+/* //////////// link design ////////// */
+.linkdes1 {
+  background-color: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* /////////////////////////////////// */
+/* ////////// table design1 ////////// */
+.tbldes1 {
+  text-align: left;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.tbldes1 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.tbldes1 th {
+  height: 5px;
+  block-size: fit-content;
+  font-weight: bold;
+}
+
+.tbldes1 th,
+td {
+  text-align: left;
+  padding: 5px 5px;
+}
+/* /////////////////////////////////// */
+/* //// super admin stats card des //// */
+.spradcarddes {
+  width: 100%;
+  height: 135px;
+  box-shadow: 1px 2px 4px rgb(207, 207, 207);
+  border-radius: 10px;
+}
+.spradcardcountdes {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid var(--blueGreen);
+}
+.spradcardcountdes p {
+  font-size: 28px;
+  font-weight: bold;
+}
+.dropdowndes2 {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  color: var(--violet);
+  outline: none;
+  text-align: right;
+}
+.dropdowndes2 option {
+  color: var(--violet);
+  outline: none;
+  text-align: right;
+}
+.drpdwn2padder {
+  padding: 10px;
+}
+/* /////////////////////////////////// */
+/* ////////////// tab des 1 ////////// */
+.tabdes1 {
+  background-color: var(--white);
+}
+.radiobtn1 {
+  display: none;
+}
+.radiobtn1:checked + .tabdes1 {
+  background-color: var(--blueGreen);
+  color: var(--white);
+}
+/* /////////////////////////////////// */
+
+/* ////////// dropdown design //////// */
+.dropdowndes1 {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+  background-color: rgb(221, 221, 221);
+}
+.dropdowndes1:focus {
+  outline: none;
+  background-color: rgb(230, 220, 220);
+}
+/* /////////////////////////////////// */
+/* ////////// table design 2 ///////// */
+.tbldes2 {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100px;
+}
+
+.tbldes2 th,
+td {
+  text-align: left;
+  padding: 10px 10px;
+}
+
+.outertbl2 {
+  overflow-x: auto;
+  height: 100%;
+}
+
+.outer2tbl2 {
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.outertbl2 th {
+  text-align: left;
+  top: 0;
+  position: sticky;
+  background-color: #57cbb4;
+  width: 100%;
+  padding: 10px 10px;
+  color: white;
+  font-family: Telegrafultrabold;
+}
+
+.tbldes2 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* /////////////////////////////////// */

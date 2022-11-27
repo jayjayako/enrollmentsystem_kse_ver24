@@ -1,0 +1,206 @@
+<style>
+  .navicondes {
+    background-color: transparent;
+    font-size: 27px;
+    cursor: pointer;
+    font-family: Barlowregular;
+    margin-left: 10px;
+    transition: 0.3s;
+    color: var(--black);
+  }
+  .navbtndes:hover {
+    background-color: var(--blueGreen);
+    border-left: 8px solid var(--violet);
+    color: var(--white);
+    transition: 0.8s;
+  }
+
+  .navbtndes:hover ion-icon {
+    color: var(--white);
+    transition: 0.8s;
+  }
+
+  .navbtndes:hover label {
+    color: var(--white);
+    transition: 0.8s;
+  }
+
+  .navbtnactive {
+    background-color: var(--blueGreen);
+    border-left: 8px solid var(--violet);
+  }
+  .navbtnactive ion-icon {
+    color: var(--white);
+  }
+  .navbtnactive label {
+    color: var(--white);
+  }
+  .leftnavbtns {
+    padding-right: 5px;
+  }
+  .leftnavbtns li {
+    height: 8.3%;
+    list-style: none;
+  }
+</style>
+<div
+  class="fullwidth fullheight"
+  style="overflow-y: scroll; background-color: var(--lightBlue)">
+  <div class="flexbox" style="padding: 43px">
+    <img
+      src="./img/knowledgeville_nobackground.png"
+      style="width: 140px; height: auto" />
+  </div>
+  <ul class="leftnavbtns fullwidth fullheight">
+    <li>
+      <div
+        id="home"
+        onclick="defaultsidenavall(); 
+        document.getElementById('home').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/dashboard');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes navbtnactive"
+        style="text-align: left">
+        <ion-icon name="home-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Home</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="addadmin"
+        onclick="defaultsidenavall();
+        document.getElementById('addadmin').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/addadmin');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="person-add-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Add Admin</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="addstaff"
+        onclick="defaultsidenavall();
+        document.getElementById('addstaff').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/addstaff');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="person-add-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Add Staff</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="audittrail"
+        onclick="defaultsidenavall();
+        document.getElementById('audittrail').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/audittrail');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="clipboard-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Audit Trail</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="managestudent"
+        onclick="defaultsidenavall();
+        document.getElementById('managestudent').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/managestudent');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="file-tray-full-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px"
+          >Manage Student</label
+        >
+      </div>
+    </li>
+    <li>
+      <div
+        id="manageuseraccess"
+        onclick="defaultsidenavall();
+        document.getElementById('manageuseraccess').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/manageuseraccess');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="desktop-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px"
+          >Manage User Access</label
+        >
+      </div>
+    </li>
+    <li>
+      <div
+        id="registrar"
+        onclick="defaultsidenavall();
+        document.getElementById('registrar').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/registrar');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="person-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Registrar</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="accounting"
+        onclick="defaultsidenavall();
+        document.getElementById('accounting').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/accounting');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="calculator-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Accounting</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="cashier"
+        onclick="defaultsidenavall();
+        document.getElementById('cashier').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/cashier');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="card-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Cashier</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="admindepartment"
+        onclick="defaultsidenavall();
+        document.getElementById('admindepartment').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/admindepartment');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="person-circle-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px"
+          >Admin Department</label
+        >
+      </div>
+    </li>
+    <li>
+      <div
+        id="reports"
+        onclick="defaultsidenavall();
+        document.getElementById('reports').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/reports');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="stats-chart-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Reports</label>
+      </div>
+    </li>
+    <li>
+      <div
+        id="logyearspan"
+        onclick="defaultsidenavall();
+        document.getElementById('logyearspan').classList.add('navbtnactive');
+        includehtml('mainpage', 'app/pages/logyearspan');"
+        class="fullwidth fullheight flexbox flexdirec-row navbtndes"
+        style="text-align: left">
+        <ion-icon name="calendar-outline" class="navicondes"></ion-icon>
+        <label class="fullwidth" style="margin-left: 10px">Log Year Span</label>
+      </div>
+    </li>
+  </ul>
+</div>

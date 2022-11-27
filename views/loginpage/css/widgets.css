@@ -1,0 +1,125 @@
+fieldset {
+  border: none;
+  outline: none;
+}
+
+/* //////// all textbox design //////// */
+.inputtextdes1 {
+  width: 100%;
+  padding: 9px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--black);
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.inputtextdes1:focus {
+  border: 1px solid var(--blueGreen);
+}
+
+.inputtextdes2 {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.inputtextdes2:focus {
+  outline: none;
+  background-color: rgb(230, 220, 220);
+}
+/* /////////////////////////////////// */
+
+/* /////////// button design ///////// */
+.btndes1 {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 35px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btndes1:hover {
+  opacity: 0.9;
+}
+
+.btndes2 {
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid var(--violet);
+  background-color: transparent;
+  color: var(--violet);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btndes2:hover {
+  background-color: var(--lightViolet);
+}
+
+.btndes3 {
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 35px;
+  background-color: var(--blueGreen);
+  color: var(--white);
+  transition: 0.5s;
+  box-shadow: 2px 3px 5px rgb(73, 73, 73);
+}
+
+.btndes3:hover {
+  opacity: 0.9;
+}
+
+.btndes4 {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: var(--violet);
+  color: var(--white);
+  transition: 0.5s;
+}
+
+.btndes4:hover {
+  opacity: 0.9;
+}
+
+.btndes5 {
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid var(--blueGreen);
+  background-color: transparent;
+  color: var(--blueGreen);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btndes5:hover {
+  background-color: var(--lightBlue);
+}
+/* /////////////////////////////////// */
+
+/* //////////// link design ////////// */
+.linkdes1 {
+  background-color: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* /////////////////////////////////// */

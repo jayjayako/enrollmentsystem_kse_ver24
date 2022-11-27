@@ -1,0 +1,39 @@
+<style>
+  /* ////////////// modals ///////////// */
+  .inquirenowanimate {
+    animation-name: animatedinquirenow;
+    animation-duration: 2s;
+  }
+  @keyframes animatedinquirenow {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 17%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 inquirenowanimate"
+    style="z-index: 2; width: 30%; height: 47%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      >
+      <h3>Inquire Now</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <h4>Content</h4>
+      <textarea
+        class="textareades1"
+        style="height: 150px; margin-top: 10px; padding: 10px"></textarea>
+      <button class="btndes4" style="margin-top: 10px">SEND</button>
+    </div>
+  </div>
+</div>

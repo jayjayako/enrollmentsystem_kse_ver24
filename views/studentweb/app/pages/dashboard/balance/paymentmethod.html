@@ -1,0 +1,52 @@
+<style>
+  /* ////////////// modals ///////////// */
+  .assessmentpaymethodanimate {
+    animation-name: animatedassessmentpaymethod;
+    animation-duration: 2s;
+  }
+  @keyframes animatedassessmentpaymethod {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 18.3%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 assessmentpaymethodanimate"
+    style="z-index: 2; width: 30%; height: 43%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      >
+      <h3>Balance Method of Payment</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <div class="fullwidth flexbox flexdirec-col">
+        <h4>Please pay for this amount</h4>
+        <p>P1000</p>
+        <p>Select Payment Method</p>
+        <select class="dropdowndes1"></select>
+        <h4>Send your payment to this account</h4>
+        <p class="fullwidth" style="text-align: left">Account Name:</p>
+        <p class="fullwidth" style="text-align: left">Account No.:</p>
+        <button
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/balance/payment.html');
+        "
+          class="btndes4"
+          style="margin-top: 10px; width: 18%">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

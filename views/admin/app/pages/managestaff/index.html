@@ -1,0 +1,67 @@
+<div class="fullwidth flexbox flexdirec-row">
+  <div class="fullwidth flexbox">
+    <h3>Select Staff</h3>
+  </div>
+  <div class="fullwidth flexbox">
+    <select class="dropdowndes1" style="width: 53%"></select>
+  </div>
+</div>
+<div
+  class="fullwidth fullheight flexbox flexdirec-col"
+  style="padding: 5px; height: 50%">
+  <fieldset
+    class="fullwidth fullheight flexbox flexdirec-row"
+    style="border: 1px solid var(--blueGreen); border-radius: 10px">
+    <legend
+      style="
+        border-radius: 10px;
+        background-color: var(--blueGreen);
+        color: var(--white);
+        padding: 5px;
+        margin-left: 10px;
+      ">
+      USER INFORMATION
+    </legend>
+    <div class="fullwidth flexbox flexdirec-col">
+      <p class="fullwidth" style="text-align: left; padding: 5px">ID Number:</p>
+      <p class="fullwidth" style="text-align: left; padding: 5px">
+        Staff Position:
+      </p>
+      <p class="fullwidth" style="text-align: left; padding: 5px">Firstname:</p>
+      <p class="fullwidth" style="text-align: left; padding: 5px">Lastname:</p>
+    </div>
+    <div class="fullwidth"></div>
+    <div class="fullwidth">
+      <img
+        class="fullwidth"
+        src="./img/defaultimg.png"
+        style="
+          border: 1px solid var(--violet);
+          border-radius: 10px;
+          height: 170px;
+          width: 170px;
+        " />
+    </div>
+  </fieldset>
+  <div class="fullwidth fullheight flexdirec-row" style="height: 20%">
+    <div
+      class="fullwidth"
+      style="text-align: left; width: 30%; padding-top: 5px">
+      <button
+        onclick="
+      document.getElementById('modals1').style.display='block'
+      includehtml('modals1', 'app/pages/managestaff/editaccess.html');
+    "
+        class="btndes4">
+        EDIT ACCESS
+      </button>
+    </div>
+  </div>
+</div>
+<div
+  id="managestafftable"
+  class="fullwidth fullheight"
+  style="padding: 5px; height: 220px"></div>
+<script>
+  includehtml("managestafftable", "app/pages/managestaff/table.html");
+</script>

@@ -1,0 +1,47 @@
+<style>
+  /* ////////////// modals ///////////// */
+  .assessmentselectschoolyranimate {
+    animation-name: animatedassessmentselectschoolyr;
+    animation-duration: 2s;
+  }
+  @keyframes animatedassessmentselectschoolyr {
+    0% {
+      margin-top: 0px;
+      opacity: 0;
+    }
+    25% {
+      margin-top: 21.5%;
+      opacity: 1;
+    }
+  }
+  /* /////////////////////////////////// */
+</style>
+<div class="fullwidth fullheight flexbox modal1">
+  <div
+    class="modal-content1 assessmentselectschoolyranimate"
+    style="z-index: 2; width: 30%; height: 33%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      >
+      <h3>Select School and Year Level</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <select class="dropdowndes1"></select>
+      <select class="dropdowndes1"></select>
+      <div class="fullwidth flexbox">
+        <button
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/assessment_payment/tuitionotherfees.html');
+        "
+          class="btndes4"
+          style="margin-top: 10px; width: 18%">
+          NEXT
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

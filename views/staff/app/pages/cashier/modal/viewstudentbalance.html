@@ -1,0 +1,86 @@
+<div class="fullwidth fullheight flexbox modal1">
+  <div class="modal-content1" style="z-index: 1; width: 70%; height: 89%">
+    <div class="modal-header1">
+      <span
+        class="close1"
+        onclick="document.getElementById('modals1').style.display='none'"
+        >&times;</span
+      >
+      <h3>View Student Balance</h3>
+    </div>
+    <div class="modal-body1 fullwidth">
+      <div class="fullwidth flexbox flexdirec-row">
+        <input class="inputtextdes3" type="text" />
+        <div class="fullwidth" style="width: 33%; padding: 5px">
+          <button class="btndes4">Search</button>
+        </div>
+      </div>
+      <fieldset
+        class="fullwidth fullheight"
+        style="background-color: var(--yellowgreen); border-radius: 10px">
+        <div class="fullwidth flexbox flexdirec-row">
+          <div style="padding: 10px">
+            <img
+              src="./img/defaultimg.png"
+              style="
+                border-radius: 10px;
+                width: 130px;
+                height: 130px;
+                border: 1px solid var(--violet);
+              " />
+          </div>
+          <div class="fullwidth flexbox flexdirec-col" style="text-align: left">
+            <p class="fullwidth">Whole Name: data</p>
+            <p class="fullwidth">ID NUMBER: data</p>
+            <p class="fullwidth">Schoollevel: data</p>
+            <p class="fullwidth">YearLevel: data</p>
+            <p class="fullwidth">Payment Method: data</p>
+            <p class="fullwidth">Total Balance: data</p>
+            <p class="fullwidth">Paid: data</p>
+          </div>
+        </div>
+      </fieldset>
+      <div class="fullwidth fullheight flexbox flexdirec-row">
+        <label>Filter</label>
+        <div class="fullwidth" style="padding: 10px">
+          <select class="dropdowndes1"></select>
+        </div>
+        <div class="fullwidth" style="padding: 10px">
+          <select class="dropdowndes1"></select>
+        </div>
+      </div>
+      <div
+        id="cashierverifypaymenttable"
+        class="fullwidth fullheight"
+        style="padding-top: 10px; height: 195px"></div>
+      <div class="fullwidth fullheight flexbox flexdirec-row">
+        <div class="fullwidth" style="width: 33%; padding: 10px">
+          <button
+            onclick="
+          document.getElementById('modals2').style.display='block'
+          includehtml('modals2', 'app/pages/cashier/modal/studentpayinformation.html');
+          "
+            class="btndes4">
+            Payment
+          </button>
+        </div>
+        <div class="fullwidth" style="width: 33%; padding: 10px">
+          <button
+            onclick="
+          document.getElementById('modals2').style.display='block'
+          includehtml('modals2', 'app/pages/cashier/modal/sendmessage.html');
+          "
+            class="btndes4">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  includehtml(
+    "cashierverifypaymenttable",
+    "app/pages/cashier/modal/table.html"
+  );
+</script>

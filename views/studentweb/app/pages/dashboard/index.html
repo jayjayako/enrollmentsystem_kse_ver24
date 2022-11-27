@@ -1,0 +1,180 @@
+<style>
+  .dashboardmaincard {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+  .dashboardmaincard img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  .dashboardmaincard ion-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    margin-top: 35px;
+    margin-right: 15px;
+    background-color: rgb(56, 155, 135);
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--white);
+    box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.81);
+    -webkit-box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.81);
+    -moz-box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.81);
+  }
+  .dashboardcontentcard1 {
+    height: 69%;
+    background-color: rgb(119, 235, 212);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .dashboardcontentcard1 h3 {
+    margin-top: 30px;
+    color: rgb(49, 49, 49);
+    margin-right: 10%;
+  }
+
+  .enrollmentstatcircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border: 2px solid rgb(231, 231, 231);
+  }
+  .enrollmentstatcircleactive {
+    border: 2px solid var(--darkGreen);
+    /* margin-bottom: 28px; */
+  }
+</style>
+<div
+  class="fullwidth fullheight mainpageanimate"
+  style="
+    background-color: var(--lightBlue);
+    padding-left: 8%;
+    padding-right: 3%;
+  ">
+  <h3
+    class="fullwidth"
+    style="text-align: left; padding-bottom: 10px; padding-top: 10px">
+    DASHBOARD
+  </h3>
+  <div
+    class="fullwidth"
+    style="
+      overflow: hidden;
+      height: 25%;
+      position: relative;
+      background-image: linear-gradient(var(--violet), lightblue);
+      border-radius: 10px;
+    ">
+    <img
+      src="./img/bgdashboard-edited.png"
+      class="fullwidth fullheight"
+      style="object-fit: contain; margin-top: 3%" />
+  </div>
+
+  <div id="enrollprogressid" class="fullwidth" style="height: 130px"></div>
+
+  <div
+    class="fullwidth flexbox flexdirec-row"
+    style="height: 15%; margin-top: -20px">
+    <div
+      class="fullwidth fullheight"
+      style="padding-right: 5px; padding-bottom: 5px">
+      <div
+        class="fullwidth fullheight dashboardmaincard"
+        style="
+          background-color: var(--blueGreen);
+          border-radius: 10px;
+          position: relative;
+        ">
+        <img src="./img/inquire_vector1.png" />
+        <ion-icon
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/modal/inquirenow.html');
+        "
+          name="chevron-forward-outline"></ion-icon>
+        <div class="fullwidth dashboardcontentcard1">
+          <div class="fullwidth fullheight flexbox flexdirec-row">
+            <h3>Inquire Now</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullwidth fullheight" style="padding-bottom: 5px">
+      <div
+        class="fullwidth fullheight dashboardmaincard"
+        style="
+          background-color: var(--blueGreen);
+          border-radius: 10px;
+          position: relative;
+        ">
+        <img src="./img/enroll_vector.png" />
+        <ion-icon
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/modal/enrollnow.html');
+        "
+          name="chevron-forward-outline"></ion-icon>
+        <div class="fullwidth dashboardcontentcard1">
+          <div class="fullwidth fullheight flexbox flexdirec-row">
+            <h3>Enroll Now</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fullwidth flexbox flexdirec-row" style="height: 15%">
+    <div class="fullwidth fullheight" style="padding-right: 5px">
+      <div
+        class="fullwidth fullheight dashboardmaincard"
+        style="
+          background-color: var(--blueGreen);
+          border-radius: 10px;
+          position: relative;
+        ">
+        <img src="./img/message_vector1.png" />
+        <ion-icon
+          onclick="
+        document.getElementById('modals1').style.display='block'
+        includehtml('modals1', 'app/pages/dashboard/modal/msg_notifications.html');
+        "
+          name="chevron-forward-outline"></ion-icon>
+        <div class="fullwidth dashboardcontentcard1">
+          <div class="fullwidth fullheight flexbox flexdirec-row">
+            <h3 style="margin-left: 26%">Messages and Notifications</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="fullwidth fullheight dashboardmaincard"
+      style="
+        background-color: var(--blueGreen);
+        border-radius: 10px;
+        position: relative;
+      ">
+      <img src="./img/balance_vector1.png" />
+      <ion-icon
+        onclick="
+      document.getElementById('modals1').style.display='block'
+      includehtml('modals1', 'app/pages/dashboard/modal/accountbalance.html');
+      "
+        name="chevron-forward-outline"></ion-icon>
+      <div class="fullwidth dashboardcontentcard1">
+        <div class="fullwidth fullheight flexbox flexdirec-row">
+          <h3 style="margin-left: 10%">Account Balance</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  includehtml("enrollprogressid", "app/pages/dashboard/enrollprogress.html");
+</script>
